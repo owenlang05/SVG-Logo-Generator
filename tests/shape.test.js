@@ -6,7 +6,7 @@ describe('Shapes', () => {
         it('should return an SVG snippet of code for a triangle', () => {
             const triangle = new Triangle();
             triangle.setShapeColor('blue')
-            expect(() => triangle.render().toEqual('<polygon points="150, 18 244, 182 56, 182 fill="blue" />'))
+            expect(() => triangle.render().toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />'))
         }
         )})
 
@@ -22,7 +22,7 @@ describe('Shapes', () => {
         it('should return an SVG snippet of code for a square', () => {
             const square = new Square();
             square.setShapeColor('black')
-            expect(() => square.render().toEqual('<rect x="150" y="100" width="160" height"160" points="fill="black" />'))
+            expect(() => square.render().toEqual('<rect x="150" y="100" width="160" height="160" fill="black" />'))
         }
     )})
 })
